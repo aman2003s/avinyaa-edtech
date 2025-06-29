@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root{
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.05);
+}
+
+.dark * {
+  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.05);
+}
+
+/* Accordion Content Scrollbar */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
+  margin: 2px 0;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3B82F6 0%, #1D4ED8 100%);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #2563EB 0%, #1E40AF 100%);
+  transform: scaleX(1.5);
+}
+
+/* Hide scroll arrows/buttons completely */
+.overflow-y-auto::-webkit-scrollbar-button {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+/* Hide all scrollbar buttons specifically */
+.overflow-y-auto::-webkit-scrollbar-button:single-button {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+.overflow-y-auto::-webkit-scrollbar-button:double-button {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+.overflow-y-auto::-webkit-scrollbar-button:start {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+.overflow-y-auto::-webkit-scrollbar-button:end {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+/* Hide scrollbar corner */
+.overflow-y-auto::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Dark mode accordion scrollbar */
+.dark .overflow-y-auto::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #60A5FA 0%, #3B82F6 100%);
+}
+
+.dark .overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #3B82F6 0%, #2563EB 100%);
+}
+
+/* Specific accordion content scrollbar styling */
+.accordion-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.accordion-content::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
+  margin: 2px 0;
+}
+
+.accordion-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3B82F6 0%, #1D4ED8 100%);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.accordion-content::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #2563EB 0%, #1E40AF 100%);
+  transform: scaleX(1.5);
+}
+
+/* Completely hide scroll arrows for accordion content */
+.accordion-content::-webkit-scrollbar-button {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  background: transparent !important;
+}
+
+.accordion-content::-webkit-scrollbar-button:single-button {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  background: transparent !important;
+}
+
+.accordion-content::-webkit-scrollbar-button:double-button {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  background: transparent !important;
+}
+
+.accordion-content::-webkit-scrollbar-button:start {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  background: transparent !important;
+}
+
+.accordion-content::-webkit-scrollbar-button:end {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  background: transparent !important;
+}
+
+.accordion-content::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Dark mode accordion content scrollbar */
+.dark .accordion-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #60A5FA 0%, #3B82F6 100%);
+}
+
+.dark .accordion-content::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #3B82F6 0%, #2563EB 100%);
+}
