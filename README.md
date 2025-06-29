@@ -45,8 +45,8 @@ A modern, responsive educational technology platform built with React, TypeScrip
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/aman2003s/avinyaaedtech.git
-   cd avinyaaedtech
+   git clone https://github.com/aman2003s/avinyaa-edtech.git
+   cd avinyaa-edtech
    ```
 
 2. **Install dependencies**
