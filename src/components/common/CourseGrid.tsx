@@ -60,7 +60,7 @@ const CourseGrid: React.FC<CourseGridProps> = ({
 
   if (loading) {
     return (
-      <div className="gap-6 justify-center flex flex-wrap">
+      <div className="gap-6 flex flex-wrap">
         {Array.from({ length: 6 }).map((_, index) => (
           <CourseCardSkeleton key={index} darkMode={darkMode} />
         ))}
@@ -113,7 +113,7 @@ const CourseGrid: React.FC<CourseGridProps> = ({
   // If drag mode is disabled, render regular cards
   if (!isDragModeEnabled) {
     return (
-      <div className="gap-6 justify-center flex flex-wrap">
+      <div className="gap-6 flex flex-wrap">
         {items.map((course, idx) => (
           <CourseCard
             key={course.id}
@@ -140,7 +140,7 @@ const CourseGrid: React.FC<CourseGridProps> = ({
       onDragEnd={handleDragEnd}
     >
       <SortableContext items={items.map(item => item.id)} strategy={rectSortingStrategy}>
-        <div className="gap-6 justify-center flex flex-wrap">
+        <div className="gap-6 flex flex-wrap">
           {items.map((course, idx) => (
             <SortableCourseCard
               key={course.id}
