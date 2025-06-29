@@ -20,16 +20,6 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import SavedSearchIcon from '@mui/icons-material/SavedSearch';
 import SpaIcon from '@mui/icons-material/Spa';
 
-const icons = [
-  { name: 'home', top: true },
-  { name: 'dashboard' },
-  { name: 'event' },
-  { name: 'notifications' },
-  { name: 'settings' },
-  { name: 'help' },
-  { name: 'logout', bottom: true },
-];
-
 interface SidebarProps {
   darkMode?: boolean;
 }

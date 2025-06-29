@@ -49,14 +49,8 @@ const CourseCard: React.FC<CourseCardProps> = ({
   semester,
   status,
   favorite = false,
-  closed = false,
   darkMode = false,
   index,
-  onFavoriteClick,
-  onAction1Click,
-  onAction2Click,
-  onAction3Click,
-  onMenuClick,
   isDragMode = false,
 }) => {
   const { openPopup } = usePopupContext();

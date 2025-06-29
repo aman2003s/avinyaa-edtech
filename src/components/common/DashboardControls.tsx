@@ -15,7 +15,6 @@ import {
 import type { SelectChangeEvent } from '@mui/material';
 import {
   Search as SearchIcon,
-  FilterList as FilterIcon,
   Sort as SortIcon,
   Clear as ClearIcon,
   ExpandMore as ExpandMoreIcon,

@@ -1,16 +1,12 @@
 import { useState } from 'react';
 import {
-  DndContext,
-  DragOverlay,
   PointerSensor,
   useSensor,
   useSensors,
 } from '@dnd-kit/core';
 import type { DragEndEvent, DragStartEvent } from '@dnd-kit/core';
 import {
-  SortableContext,
   arrayMove,
-  rectSortingStrategy,
 } from '@dnd-kit/sortable';
 import type { Course } from '../types/course';
 

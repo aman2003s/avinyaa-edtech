@@ -8,14 +8,12 @@ interface SortableCourseCardProps {
   course: Course;
   index: number;
   darkMode?: boolean;
-  onFavoriteClick?: (courseId: string) => void;
 }
 
 const SortableCourseCard: React.FC<SortableCourseCardProps> = ({
   course,
   index,
   darkMode = false,
-  onFavoriteClick,
 }) => {
   const {
     attributes,

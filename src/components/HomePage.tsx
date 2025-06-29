@@ -11,7 +11,6 @@ import { PopupProvider } from '../context/PopupContext';
 import IconButton from '@mui/material/IconButton';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '../hooks/useTheme';
 
 const HomePage: React.FC = () => {

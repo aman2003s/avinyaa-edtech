@@ -39,13 +39,6 @@ const PopupModal: React.FC = () => {
     return 'Menu action triggered';
   };
 
-  const getDisplayText = () => {
-    if (popupData.buttonType === 'menu') {
-      return getMenuActionText();
-    }
-    return `${getButtonLabel(popupData.buttonType)} clicked for ${popupData.courseTitle} (${popupData.courseCode})`;
-  };
-
   return (
     <Dialog
       open={isOpen}
