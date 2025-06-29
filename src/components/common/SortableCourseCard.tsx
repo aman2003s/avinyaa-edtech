@@ -47,7 +47,13 @@ const SortableCourseCard: React.FC<SortableCourseCardProps> = ({
   return (
     <div
       ref={setNodeRef}
-      style={style}
+      style={{
+        ...style,
+        width: '100%',
+        maxWidth: '300px',
+        minWidth: '300px',
+        height: 'fit-content',
+      }}
       {...attributes}
       {...listeners}
       className="cursor-grab active:cursor-grabbing"
