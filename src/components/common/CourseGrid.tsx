@@ -46,7 +46,6 @@ const CourseGrid: React.FC<CourseGridProps> = ({
   const {
     items,
     setItems,
-    activeId,
     sensors,
     handleDragStart,
     handleDragEnd,
@@ -147,7 +146,6 @@ const CourseGrid: React.FC<CourseGridProps> = ({
               course={course}
               index={idx}
               darkMode={darkMode}
-              onFavoriteClick={onFavoriteClick}
             />
           ))}
         </div>
